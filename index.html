@@ -5,16 +5,20 @@
   <style type="text/css" media="all" id="my"></style>
 </head>
 <body style="background-image: unset" id="body">
-    <h1 id="h1"></h1>
-    <button onClick="warning()">
-      <a>Okay</a>
-    </button>
+    <center>
+      <h1 id="h1"></h1>
+      <button onClick="warning()" id="button">
+        <a>Okay</a>
+      </button>
+    </center>
      <script type="text/javascript">
       function warning() {
         var body = document.getElementById("body");
         var h1 = document.getElementById("h1");
+        var button = document.getElementById("button");
         h1.style.display = "none";
         body.style.backgroundImage = "url(https://i.gifer.com/U9Aw.gif)";
+        button.style.display = "none";
       }
     </script>
 </body>
