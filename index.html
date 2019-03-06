@@ -22,6 +22,15 @@ VIEWER DISCRETION IS ADVISED</h1>
         h1.style.display = "none";
         body.style.backgroundImage = "url(https://i.gifer.com/U9Aw.gif)";
         button.style.display = "none";
+          if (body.requestFullscreen) {
+          body.requestFullscreen();
+          } else if (body.mozRequestFullScreen) { /* Firefox */
+          body.mozRequestFullScreen();
+          } else if (body.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+          body.webkitRequestFullscreen();
+          } else if (body.msRequestFullscreen) { /* IE/Edge */
+          body.msRequestFullscreen();
+          }
       }
     </script>
 </body>
